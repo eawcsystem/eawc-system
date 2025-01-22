@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benutzeranmeldung</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header mit Benutzername und Rank -->
+<div class="header">
+    <span id="user-info">User: noch anmelden | Rank: -</span>
+</div>
+
+<!-- Login-Bereich -->
+<div class="login-container" id="login-container">
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="eawcsystem.jpg" alt="Logo" class="logo">
+    </div>
+
+    <h2>Login</h2>
+    <form id="loginForm">
+        <label for="username">Benutzername:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="pin">PIN:</label>
+        <input type="password" id="pin" name="pin" required>
+        <button type="submit">Einloggen</button>
+    </form>
+    <h3>Info für gast zugang : </h3>
+    <p>Benutzername: Gast </p>
+    <p>Pin: Gast2025</p>
+    <footer>
+        <h1>Kontat</h1>
+        <p>E-mail: eawcsystem@outlook.de</p>
+    </footer>
+</div>
+
+<!-- Startseite-Bereich (wird nach Anmeldung angezeigt) -->
+<div id="start-page" class="hidden">
+ <h1>EAWC system Info</h1>
+    <!-- Abmelden-Button auf der Startseite -->
+    <button id="logoutButton" class="small-logout-button" onclick="logout()">Abmelden</button>
+    <div class="logo-start-page">
+        <img src="eawcsystem.jpg" alt="Logo" class="logo">
+    </div>
+    <footer>
+    <h1>Kontat</h1>
+    <p>E-mail: eawcsystem@outlook.de</p>
+</footer>
+</div> 
+
+<script src="script.js"></script>
+
+</body>
+</html>
