@@ -1,4 +1,4 @@
- // Benutzer- und PIN-Daten
+// Benutzer- und PIN-Daten
 const users = [
     { username: 'Gast', pin: 'Gast2025', rank: 'Gast' },
     { username: 'eawc-marcel', pin: 'Marcel2009', rank: 'Inhaber' },   
@@ -66,4 +66,9 @@ function checkSupportButtonVisibility() {
 function showSupportPage() {
     document.getElementById('start-page').classList.add('hidden');
     document.getElementById('Support-page').classList.remove('hidden');
+}
+
+function showStartPageFromSupport() {
+    document.getElementById('Support-page').classList.add('hidden');
+    document.getElementById('start-page').classList.remove('hidden');
 }
