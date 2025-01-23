@@ -49,3 +49,19 @@ function logout() {
     document.getElementById('login-container').classList.remove('hidden');
     document.getElementById('start-page').classList.add('hidden');
 }
+function() {
+    // Simulate user rank (example: "Support" or "Owner")
+    const userRank = "Gast"; // Change this to test different ranks
+
+    // Display the support button if the user is Support or Owner
+    if(userRank === "Support" || userRank === "Inhaber") {
+        document.getElementById("support-button").classList.remove("hidden");
+    } else if(userRank === "Gast") {
+        document.getElementById("support-button").classList.add("hidden");
+    }
+});
+
+function showSupportPage() {
+    document.getElementById("start-page").classList.add("hidden");
+    document.getElementById("Support-page").classList.remove("hidden");
+}
