@@ -2,7 +2,7 @@
 const users = [
     { username: 'Gast', pin: 'Gast2025', rank: 'Gast' },
     { username: 'eawc-marcel', pin: 'Marcel2009', rank: 'Inhaber' },   
-    { username: 'eawc-marc', pin: 'Marc', rank: 'Inhaber' },
+    { username: 'eawc-marc', pin: 'Marc2009', rank: 'stv.Inhaber' },
 ];
 
 let currentUser = null;
