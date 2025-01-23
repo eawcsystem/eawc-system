@@ -80,7 +80,9 @@ button:hover {
     border-radius: 8px;
 }
 
-#logoutButton {
+#logoutButton,
+#logoutButtonSupport,
+#backToStartButton {
     width: 1.5cm;
     height: 1.5cm;
     background-color: #f44336;
@@ -98,7 +100,9 @@ button:hover {
     align-items: center;
 }
 
-#logoutButton:hover {
+#logoutButton:hover,
+#logoutButtonSupport:hover,
+#backToStartButton:hover {
     background-color: #d32f2f;
 }
 
