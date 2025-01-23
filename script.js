@@ -21,6 +21,7 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
         currentUser = user;
         updateHeader();
         showStartPage();
+        checkSupportButtonVisibility();
     } else {
         alert('Benutzername oder PIN sind falsch!');
     }
@@ -48,20 +49,20 @@ function logout() {
     updateHeader();
     document.getElementById('login-container').classList.remove('hidden');
     document.getElementById('start-page').classList.add('hidden');
+    document.getElementById('Support-page').classList.add('hidden');
+    document.getElementById('support-button').classList.add('hidden');
 }
-function() {
-    // Simulate user rank (example: "Support" or "Owner")
-    const userRank = "Gast"; // Change this to test different ranks
 
-    // Display the support button if the user is Support or Owner
-    if(userRank === "Support" || userRank === "Inhaber") {
-        document.getElementById("support-button").classList.remove("hidden");
-    } else if(userRank === "Gast") {
-        document.getElementById("support-button").classList.add("hidden");
+// Funktion, um die Sichtbarkeit des Support-Buttons zu überprüfen
+function checkSupportButtonVisibility() {
+    if (currentUser.rank === 'Support' || currentUser.rank === 'Inhaber') {
+        document.getElementById('support-button').classList.remove('hidden');
+    } else {
+        document.getElementById('support-button').classList.add('hidden');
     }
-});
+}
 
 function showSupportPage() {
-    document.getElementById("start-page").classList.add("hidden");
-    document.getElementById("Support-page").classList.remove("hidden");
+    document.getElementById('start-page').classList.add('hidden');
+    document.getElementById('Support-page').classList.remove('hidden');
 }
