@@ -53,8 +53,28 @@
 
     <!-- Button to Support page (visible to Support rank and owner) -->
     <div id="support-button" class="hidden">
-        <button onclick="location.href='support.html'">Support Bereich</button>
+        <button onclick="showSupportPage()">Support Bereich</button>
     </div>
+  </div>
+    <footer>
+    <h1>Kontat</h1>
+    <p>E-mail: eawcsystem@outlook.de</p>
+</footer>
+</div>
+
+<!-- Support-Bereich (wird nach Klick auf Support-Button angezeigt) -->
+<div id="Support-page" class="hidden">
+ <h1>Support Bereich</h1>
+    <!-- Abmelden-Button auf der Support-Seite -->
+    <button id="logoutButtonSupport" class="small-logout-button" onclick="logout()">Abmelden</button>
+    <div class="logo-support-page">
+        <img src="eawcsystem.jpg" alt="Logo" class="logo">
+    </div>
+  <div>
+    <a>*info über EAWC system*</a>
+    <a>EAWC system hilft euch, dass es dir wieder gut geht </a>
+    <a>und EAWC system hilft natürlich auch in discord</a>
+    <a>Bereicht und vieles mehr.</a>
   </div>
     <footer>
     <h1>Kontat</h1>
@@ -76,6 +96,11 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("support-button").classList.add("hidden");
     }
 });
+
+function showSupportPage() {
+    document.getElementById("start-page").classList.add("hidden");
+    document.getElementById("Support-page").classList.remove("hidden");
+}
 </script>
 
 </body>
