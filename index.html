@@ -50,6 +50,11 @@
     <a>EAWC system hilft euch, dass es dir wieder gut geht </a>
     <a>und EAWC system hilft natürlich auch in discord</a>
     <a>Bereicht und vieles mehr.</a>
+
+    <!-- Button to Support page (visible to Support rank and owner) -->
+    <div id="support-button" class="hidden">
+        <button onclick="location.href='support.html'">Support Bereich</button>
+    </div>
   </div>
     <footer>
     <h1>Kontat</h1>
@@ -58,6 +63,18 @@
 </div> 
 
 <script src="script.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    // Simulate user rank (example: "Support" or "Owner")
+    const userRank = "Support"; // Change this to test different ranks
+
+    // Display the support button if the user is Support or Owner
+    if(userRank === "Support" || userRank === "Owner") {
+        document.getElementById("support-button").classList.remove("hidden");
+    }
+});
+</script>
 
 </body>
 </html>
