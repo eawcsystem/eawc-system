@@ -1,7 +1,8 @@
 // Benutzer- und PIN-Daten
 const users = [
     { username: 'Gast', pin: 'Gast2025', rank: 'Gast' },
-    { username: 'eawc-marcel', pin: 'Marcel2009', rank: 'Inhaber' }
+    { username: 'eawc-marcel', pin: 'Marcel2009', rank: 'Inhaber' },   
+    { username: 'eawc-marc', pin: 'Marc', rank: 'Inhaber' },
 ];
 
 let currentUser = null;
