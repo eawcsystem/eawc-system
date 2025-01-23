@@ -72,7 +72,8 @@ button:hover {
     display: none;
 }
 
-#start-page {
+#start-page ,
+#support-page {
     text-align: center;
     padding: 50px;
     background-color: white;
