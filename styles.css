@@ -17,6 +17,7 @@ body {
     justify-content: center; 
     align-items: center; 
     z-index: 1000;
+    color: white;
 }
 
 #user-info {
@@ -79,6 +80,7 @@ button:hover {
     background-color: white;
     margin-top: 50px;
     border-radius: 8px;
+    color:white;
 }
 
 #logoutButton,
