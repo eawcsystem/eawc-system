@@ -74,7 +74,8 @@ button:hover {
 }
 
 #start-page ,
-#Support-page {
+#Support-page,
+#Admin-page {
     text-align: center;
     padding: 50px;
     background-color: white;
@@ -85,7 +86,9 @@ button:hover {
 
 #logoutButton,
 #logoutButtonSupport,
-#backToStartButton {
+#logoutButtonAdmin,
+#backToStartButton,
+#backToStartButtonAdmin {
     width: 1.5cm;
     height: 1.5cm;
     background-color: #f44336;
@@ -105,7 +108,9 @@ button:hover {
 
 #logoutButton:hover,
 #logoutButtonSupport:hover,
-#backToStartButton:hover {
+#logoutButtonAdmin:hover,
+#backToStartButton:hover,
+#backToStartButtonAdmin:hover {
     background-color: #d32f2f;
 }
 
