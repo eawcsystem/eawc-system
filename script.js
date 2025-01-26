@@ -21,7 +21,7 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
         updateHeader();
         showStartPage();
         checkSupportButtonVisibility();
-        checkAdminButtonVisibility();
+        checkModeratorButtonVisibility();
     } else {
         alert('Benutzername oder PIN sind falsch!');
     }
@@ -50,9 +50,9 @@ function logout() {
     document.getElementById('login-container').classList.remove('hidden');
     document.getElementById('start-page').classList.add('hidden');
     document.getElementById('Support-page').classList.add('hidden');
-    document.getElementById('admin-page').classList.add('hidden');
+    document.getElementById('moderator-page').classList.add('hidden');
     document.getElementById('support-button').classList.add('hidden');
-    document.getElementById('admin-button').classList.add('hidden');
+    document.getElementById('moderator-button').classList.add('hidden');
 }
 
 // Funktion, um die Sichtbarkeit des Support-Buttons zu überprüfen
@@ -65,11 +65,11 @@ function checkSupportButtonVisibility() {
 }
 
 // Funktion, um die Sichtbarkeit des Admin-Buttons zu überprüfen
-function checkAdminButtonVisibility() {
+function checkModeratorButtonVisibility() {
     if (currentUser.rank === 'Admin' || currentUser.rank === 'Inhaber') {
-        document.getElementById('admin-button').classList.remove('hidden');
+        document.getElementById('moderator-button').classList.remove('hidden');
     } else {
-        document.getElementById('admin-button').classList.add('hidden');
+        document.getElementById('moderator-button').classList.add('hidden');
     }
 }
 
@@ -83,12 +83,12 @@ function showStartPageFromSupport() {
     document.getElementById('start-page').classList.remove('hidden');
 }
 
-function showAdminPage() {
+function showModeratorPage() {
     document.getElementById('start-page').classList.add('hidden');
-    document.getElementById('Admin-page').classList.remove('hidden');
+    document.getElementById('Moderator-page').classList.remove('hidden');
 }
 
 function showStartPageFromAdmin() {
-    document.getElementById('Admin-page').classList.add('hidden');
+    document.getElementById('Moderator-page').classList.add('hidden');
     document.getElementById('start-page').classList.remove('hidden');
 }
