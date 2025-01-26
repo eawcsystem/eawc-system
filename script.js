@@ -1,11 +1,8 @@
 // Benutzer- und PIN-Daten
 const users = [
     { username: 'Gast', pin: 'Gast2025', rank: 'Gast' },
-    { username: 'eawc-marcel', pin: 'Marcel2009', rank: 'Inhaber' },   
-    { username: 'eawc-marc', pin: 'Marc2009', rank: 'stv.Inhaber' },
-    { username: 'support-user', pin: 'Support2025', rank: 'Support' }, // Example Support user
-    { username: 'admin-user', pin: 'Admin2025', rank: 'Admin' } // Example Admin user
-];
+    { username: 'EAWCMarcel', pin: 'Marcel__2007', rank: 'Inhaber' },   
+    ];
 
 let currentUser = null;
 
