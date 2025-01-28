@@ -31,6 +31,7 @@ body {
     background-color: rgb(106, 106, 106);
     border-radius: 8px;
     width: 300px;
+    color: white;
 }
 
 .logo-container {
