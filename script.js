@@ -1,4 +1,5 @@
-// Benutzer- und PIN-Daten
+/*
+ // Benutzer- und PIN-Daten
 const users = [
     { username: 'Gast', pin: 'Gast2025', rank: 'Gast' },
     { username: 'EAWCMarcel', pin: 'Marcel__2007', rank: 'Inhaber' },   
@@ -92,3 +93,9 @@ function showStartPageFromAdmin() {
     document.getElementById('Moderator-page').classList.add('hidden');
     document.getElementById('start-page').classList.remove('hidden');
 }
+*/
+
+// Additional script to hide all visible elements
+document.addEventListener("DOMContentLoaded", function() {
+    document.body.style.display = "none";
+});
