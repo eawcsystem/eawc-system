@@ -93,9 +93,5 @@ function showStartPageFromAdmin() {
     document.getElementById('Moderator-page').classList.add('hidden');
     document.getElementById('start-page').classList.remove('hidden');
 }
-*/
 
-// Additional script to hide all visible elements
-document.addEventListener("DOMContentLoaded", function() {
-    document.body.style.display = "none";
 });
