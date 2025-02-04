@@ -1,4 +1,4 @@
-/*
+
  // Benutzer- und PIN-Daten
 const users = [
     { username: 'Gast', pin: 'Gast2025', rank: 'Gast' },
