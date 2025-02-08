@@ -1,8 +1,12 @@
-require('dotenv').config();
 // Benutzer- und PIN-Daten
 const users = [
-    { username: process.env.GUEST_USERNAME, pin: process.env.GUEST_PIN, rank: 'Gast' },
-    { username: 'EAWCMarcel', pin: 'Marcel__2007', rank: 'Inhaber' },
+    { username: 'Gast' , 
+      pin: 'Gast2025', 
+      rank: 'Gast' },
+    
+    { username: 'EAWCMarcel', 
+      pin: 'Marcel__2007', 
+     rank: 'Inhaber' },
 ];
 
 let currentUser = null;
@@ -92,4 +96,4 @@ function showModeratorPage() {
 function showStartPageFromAdmin() {
     document.getElementById('Moderator-page').classList.add('hidden');
     document.getElementById('start-page').classList.remove('hidden');
-} 
+}
