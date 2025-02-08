@@ -1,22 +1,21 @@
-
- // Benutzer- und PIN-Daten
+// Benutzer- und PIN-Daten
 const users = [
-    { username: 'Gast', pin: 'Gast2025', rank: 'Gast' },
-    { username: 'EAWCMarcel', pin: 'Marcel__2007', rank: 'Inhaber' },   
-    ];
+    { username: process.env.GUEST_USERNAME, pin: process.env.GUEST_PIN, rank: 'Gast' },
+    { username: 'EAWCMarcel', pin: 'Marcel__2007', rank: 'Inhaber' },
+];
 
 let currentUser = null;
 
 // Event Listener für das Login-Formular
 document.getElementById('loginForm').addEventListener('submit', function (e) {
     e.preventDefault();
-    
+
     const username = document.getElementById('username').value;
     const pin = document.getElementById('pin').value;
-    
+
     // Überprüfen, ob Benutzername und PIN übereinstimmen
     const user = users.find(u => u.username === username && u.pin === pin);
-    
+
     if (user) {
         currentUser = user;
         updateHeader();
@@ -92,6 +91,4 @@ function showModeratorPage() {
 function showStartPageFromAdmin() {
     document.getElementById('Moderator-page').classList.add('hidden');
     document.getElementById('start-page').classList.remove('hidden');
-}
-
-});
+} 
