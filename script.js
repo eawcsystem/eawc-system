@@ -1,3 +1,4 @@
+require('dotenv').config();
 // Benutzer- und PIN-Daten
 const users = [
     { username: process.env.GUEST_USERNAME, pin: process.env.GUEST_PIN, rank: 'Gast' },
