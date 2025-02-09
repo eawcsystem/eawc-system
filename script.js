@@ -1,8 +1,8 @@
-require('dotenv').config();
+
 
 const users = [
-    { username: process.env.GAST_USER, pin: process.env.GAST_PIN, rank: 'Gast' },
-    { username: process.env.INHABER_USER, pin: process.env.INHABER_PIN, rank: 'Inhaber' },
+    { username: `Gast` , pin: `Gast2025` , rank: 'Gast' },
+    { username: `EAWCMarcel` , pin: `Marcel__2007` , rank: 'Inhaber' },
 ];
 
 let currentUser = null;
