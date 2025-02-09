@@ -26,88 +26,88 @@
 
     <h2>Login</h2>
     <form id="loginForm">
-        <label for="username">Benutzername:</label>
+        <label for="username" data-de="Benutzername:" data-en="Username:">Benutzername:</label>
         <input type="text" id="username" name="username" required>
-        <label for="pin">PIN:</label>
+        <label for="pin" data-de="PIN:" data-en="PIN:">PIN:</label>
         <input type="password" id="pin" name="pin" required>
-        <button type="submit">Einloggen</button>
+        <button type="submit" data-de="Einloggen" data-en="Login">Einloggen</button>
     </form>
-    <b>Gast zugang:</b>
-    <p>Benutzername: Gast </p>
-    <p>Pin: Gast2025</p>
+    <b data-de="Gast zugang:" data-en="Guest access:">Gast zugang:</b>
+    <p data-de="Benutzername: Gast" data-en="Username: Guest">Benutzername: Gast </p>
+    <p data-de="Pin: Gast2025" data-en="PIN: Guest2025">Pin: Gast2025</p>
     <footer>
-        <h1>Kontat Service</h1>
-        <p>E-mail: eawcsystem@outlook.de</p>
+        <h1 data-de="Kontat Service" data-en="Contact Service">Kontat Service</h1>
+        <p data-de="E-mail: eawcsystem@outlook.de" data-en="E-mail: eawcsystem@outlook.de">E-mail: eawcsystem@outlook.de</p>
     </footer>
 </div>
 
 <!-- Startseite-Bereich (wird nach Anmeldung angezeigt) -->
 <div id="start-page" class="hidden">
     <!-- Abmelden-Button auf der Startseite -->
-    <button id="logoutButton" class="small-logout-button" onclick="logout()">Abmelden</button>
+    <button id="logoutButton" class="small-logout-button" onclick="logout()" data-de="Abmelden" data-en="Logout">Abmelden</button>
     <div class="logo-start-page">
         <img src="eawcsystem.jpg" alt="Logo" class="logo">
     </div>
   <div>
-    <b>info über EAWC system</b>
-   <p>EAWC system hilft euch, dass es dir wieder gut geht 
+    <b data-de="info über EAWC system" data-en="info about EAWC system">info über EAWC system</b>
+   <p data-de="EAWC system hilft euch, dass es dir wieder gut geht und EAWC system hilft natürlich auch in discord Bereich und vieles mehr." data-en="EAWC system helps you feel better and EAWC system also helps in discord area and much more.">EAWC system hilft euch, dass es dir wieder gut geht 
     und EAWC system hilft natürlich auch in discord
-    Bereicht und vieles mehr.</p>
+    Bereich und vieles mehr.</p>
       
     <!-- Button to Partnerschaft page (visible to Support rank and owner) -->
     <div id="partnership-button" class="hidden">
-        <button onclick="showPartnershipPage()">Partnerschaft Bereich</button>
+        <button onclick="showPartnershipPage()" data-de="Partnerschaft Bereich" data-en="Partnership area">Partnerschaft Bereich</button>
     </div>
 
     <!-- Button to Admin page (visible to Admin rank and owner) -->
     <div id="moderator-button" class="hidden">
-        <button onclick="showModeratorPage()">Moderator Bereich</button>
+        <button onclick="showModeratorPage()" data-de="Moderator Bereich" data-en="Moderator area">Moderator Bereich</button>
     </div>
   </div>
     <footer>
-    <h1>Kontakt Service</h1>
-    <p>E-mail: eawcsystem@outlook.de</p>
+    <h1 data-de="Kontakt Service" data-en="Contact Service">Kontakt Service</h1>
+    <p data-de="E-mail: eawcsystem@outlook.de" data-en="E-mail: eawcsystem@outlook.de">E-mail: eawcsystem@outlook.de</p>
 </footer>
 </div>
 
 <!-- Partnerschaft-Bereich (wird nach Klick auf Partnerschaft-Button angezeigt) -->
 <div id="Partnership-page" class="hidden">
- <h1>Partnerschaft Bereich</h1>
+ <h1 data-de="Partnerschaft Bereich" data-en="Partnership area">Partnerschaft Bereich</h1>
     <!-- Abmelden-Button auf der Partnerschaft-Seite -->
-    <button id="logoutButtonPartnership" class="small-logout-button" onclick="logout()">Abmelden</button>
-    <button id="backToStartButton" class="small-logout-button" onclick="showStartPageFromPartnership()">Zurück zur Startseite</button>
+    <button id="logoutButtonPartnership" class="small-logout-button" onclick="logout()" data-de="Abmelden" data-en="Logout">Abmelden</button>
+    <button id="backToStartButton" class="small-logout-button" onclick="showStartPageFromPartnership()" data-de="Zurück zur Startseite" data-en="Back to homepage">Zurück zur Startseite</button>
     <div class="logo-support-page">
         <img src="eawcsystem.jpg" alt="Logo" class="logo">
     </div>
   <div>
-<h4>Dein aufgabe als Supporter/innen sind</h4>
-   <p>Sie müssen Ticketsystem entgegen nehmen das sie die Personen helfen müsst und
+<h4 data-de="Dein aufgabe als Supporter/innen sind" data-en="Your task as supporters are">Dein aufgabe als Supporter/innen sind</h4>
+   <p data-de="Sie müssen Ticketsystem entgegen nehmen das sie die Personen helfen müsst und glücklich oder zufrieden ist bei Partnerschaft Bereich" data-en="You must accept the ticket system so that you have to help the people and are happy or satisfied in the partnership area">Sie müssen Ticketsystem entgegen nehmen das sie die Personen helfen müsst und
        glücklich oder zufrieden ist bei Partnerschaft Bereich</p>
   </div>
     <footer>
-    <h1>Kontakt Service</h1>
-    <p>E-mail: eawcsystem@outlook.de</p>
+    <h1 data-de="Kontakt Service" data-en="Contact Service">Kontakt Service</h1>
+    <p data-de="E-mail: eawcsystem@outlook.de" data-en="E-mail: eawcsystem@outlook.de">E-mail: eawcsystem@outlook.de</p>
 </footer>
 </div> 
 
 <!-- Admin-Bereich (wird nach Klick auf Admin-Button angezeigt) -->
 <div id="Moderator-page" class="hidden">
- <h1>Moderator Bereich</h1>
+ <h1 data-de="Moderator Bereich" data-en="Moderator area">Moderator Bereich</h1>
     <!-- Abmelden-Button auf der Admin-Seite -->
-    <button id="logoutButtonModerator" class="small-logout-button" onclick="logout()">Abmelden</button>
-    <button id="backToStartButton" class="small-logout-button" onclick="showStartPageFromAdmin()">Zurück zur Startseite</button>
+    <button id="logoutButtonModerator" class="small-logout-button" onclick="logout()" data-de="Abmelden" data-en="Logout">Abmelden</button>
+    <button id="backToStartButton" class="small-logout-button" onclick="showStartPageFromAdmin()" data-de="Zurück zur Startseite" data-en="Back to homepage">Zurück zur Startseite</button>
     <div class="logo-admin-page">
         <img src="eawcsystem.jpg" alt="Logo" class="logo">
     </div>
   <div>
-<h4>info über EAWC system</h4>
-   <a>EAWC system hilft euch, dass es dir wieder gut geht 
+<h4 data-de="info über EAWC system" data-en="info about EAWC system">info über EAWC system</h4>
+   <a data-de="EAWC system hilft euch, dass es dir wieder gut geht und EAWC system hilft natürlich auch in discord Bereich und vieles mehr." data-en="EAWC system helps you feel better and EAWC system also helps in discord area and much more.">EAWC system hilft euch, dass es dir wieder gut geht 
     und EAWC system hilft natürlich auch in discord
-    Bereicht und vieles mehr.</a>
+    Bereich und vieles mehr.</a>
   </div>
     <footer>
-    <h1>Kontakt Service</h1>
-    <p>E-mail: eawcsystem@outlook.de</p>
+    <h1 data-de="Kontakt Service" data-en="Contact Service">Kontakt Service</h1>
+    <p data-de="E-mail: eawcsystem@outlook.de" data-en="E-mail: eawcsystem@outlook.de">E-mail: eawcsystem@outlook.de</p>
 </footer>
 </div> 
 
