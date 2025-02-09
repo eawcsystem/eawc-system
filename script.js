@@ -10,7 +10,6 @@ const users = [
 ];
 
 let currentUser = null;
-let currentLanguage = 'de';
 
 // Event Listener für das Login-Formular
 document.getElementById('loginForm').addEventListener('submit', function (e) {
@@ -97,17 +96,4 @@ function showModeratorPage() {
 function showStartPageFromAdmin() {
     document.getElementById('Moderator-page').classList.add('hidden');
     document.getElementById('start-page').classList.remove('hidden');
-}
-
-function setLanguage(lang) {
-    currentLanguage = lang;
-    document.documentElement.lang = lang;
-    translateContent();
-}
-
-// Funktion, um den Inhalt basierend auf der ausgewählten Sprache zu übersetzen
-function translateContent() {
-    document.querySelectorAll('[data-de]').forEach(element => {
-        element.textContent = element.getAttribute(`data-${currentLanguage}`);
-    });
 }
