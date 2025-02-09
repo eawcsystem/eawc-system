@@ -88,7 +88,7 @@ button:hover {
 }
 
 #start-page ,
-#Support-page,
+#Partnership-page,
 #Moderator-page {
     text-align: center;
     padding: 50px;
@@ -99,7 +99,7 @@ button:hover {
 }
 
 #logoutButton,
-#logoutButtonSupport,
+#logoutButtonPartnership,
 #logoutButtonModerator,
 #backToStartButton,
 #backToStartButton {
@@ -121,7 +121,7 @@ button:hover {
 }
 
 #logoutButton:hover,
-#logoutButtonSupport:hover,
+#logoutButtonPartnership:hover,
 #logoutButtonModerator:hover,
 #backToStartButton:hover,
 #backToStartButtonModerator:hover {
