@@ -102,5 +102,12 @@ function showStartPageFromAdmin() {
 function setLanguage(lang) {
     currentLanguage = lang;
     document.documentElement.lang = lang;
-    // Hier können Sie den Inhalt der Seite basierend auf der ausgewählten Sprache aktualisieren.
+    translateContent();
+}
+
+// Funktion, um den Inhalt basierend auf der ausgewählten Sprache zu übersetzen
+function translateContent() {
+    document.querySelectorAll('[data-de]').forEach(element => {
+        element.textContent = element.getAttribute(`data-${currentLanguage}`);
+    });
 }
