@@ -46,7 +46,7 @@ function logout() {
     document.getElementById('login-container').classList.remove('hidden');
     document.getElementById('start-page').classList.add('hidden');
     document.getElementById('Partnership-page').classList.add('hidden');
-    document.getElementById('moderator-page').classList.add('hidden');
+    document.getElementById('Moderator-page').classList.add('hidden');
     document.getElementById('partnership-button').classList.add('hidden');
     document.getElementById('moderator-button').classList.add('hidden');
 }
