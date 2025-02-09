@@ -1,24 +1,18 @@
-// Benutzer- und PIN-Daten
+require('dotenv').config();
+
 const users = [
-    { username: 'Gast' , 
-      pin: 'Gast2025', 
-      rank: 'Gast' },
-    
-    { username: 'EAWCMarcel', 
-      pin: 'Marcel__2007', 
-     rank: 'Inhaber' },
+    { username: process.env.GAST_USER, pin: process.env.GAST_PIN, rank: 'Gast' },
+    { username: process.env.INHABER_USER, pin: process.env.INHABER_PIN, rank: 'Inhaber' },
 ];
 
 let currentUser = null;
 
-// Event Listener für das Login-Formular
-document.getElementById('loginForm').addEventListener('submit', function (e) {
+document.getElementById('loginForm').addEventListener('submit', async function (e) {
     e.preventDefault();
 
     const username = document.getElementById('username').value;
     const pin = document.getElementById('pin').value;
 
-    // Überprüfen, ob Benutzername und PIN übereinstimmen
     const user = users.find(u => u.username === username && u.pin === pin);
 
     if (user) {
@@ -32,7 +26,6 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
     }
 });
 
-// Funktion, um die Benutzerinformationen im Header anzuzeigen
 function updateHeader() {
     const header = document.getElementById('user-info');
     if (currentUser) {
@@ -42,13 +35,11 @@ function updateHeader() {
     }
 }
 
-// Funktion, die den Login-Bereich ausblendet und die Startseite anzeigt
 function showStartPage() {
     document.getElementById('login-container').classList.add('hidden');
     document.getElementById('start-page').classList.remove('hidden');
 }
 
-// Funktion, um den Benutzer abzumelden
 function logout() {
     currentUser = null;
     updateHeader();
@@ -60,7 +51,6 @@ function logout() {
     document.getElementById('moderator-button').classList.add('hidden');
 }
 
-// Funktion, um die Sichtbarkeit des Partnerschaft-Buttons zu überprüfen
 function checkPartnershipButtonVisibility() {
     if (currentUser.rank === 'Support' || currentUser.rank === 'Inhaber') {
         document.getElementById('partnership-button').classList.remove('hidden');
@@ -69,7 +59,6 @@ function checkPartnershipButtonVisibility() {
     }
 }
 
-// Funktion, um die Sichtbarkeit des Admin-Buttons zu überprüfen
 function checkModeratorButtonVisibility() {
     if (currentUser.rank === 'Admin' || currentUser.rank === 'Inhaber') {
         document.getElementById('moderator-button').classList.remove('hidden');
