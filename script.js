@@ -26,7 +26,7 @@ document.getElementById('loginForm').addEventListener('submit', function (e) {
         currentUser = user;
         updateHeader();
         showStartPage();
-        checkSupportButtonVisibility();
+        checkPartnershipButtonVisibility();
         checkModeratorButtonVisibility();
     } else {
         alert('Benutzername oder PIN sind falsch!');
@@ -55,18 +55,18 @@ function logout() {
     updateHeader();
     document.getElementById('login-container').classList.remove('hidden');
     document.getElementById('start-page').classList.add('hidden');
-    document.getElementById('Support-page').classList.add('hidden');
+    document.getElementById('Partnership-page').classList.add('hidden');
     document.getElementById('moderator-page').classList.add('hidden');
-    document.getElementById('support-button').classList.add('hidden');
+    document.getElementById('partnership-button').classList.add('hidden');
     document.getElementById('moderator-button').classList.add('hidden');
 }
 
-// Funktion, um die Sichtbarkeit des Support-Buttons zu überprüfen
-function checkSupportButtonVisibility() {
+// Funktion, um die Sichtbarkeit des Partnerschaft-Buttons zu überprüfen
+function checkPartnershipButtonVisibility() {
     if (currentUser.rank === 'Support' || currentUser.rank === 'Inhaber') {
-        document.getElementById('support-button').classList.remove('hidden');
+        document.getElementById('partnership-button').classList.remove('hidden');
     } else {
-        document.getElementById('support-button').classList.add('hidden');
+        document.getElementById('partnership-button').classList.add('hidden');
     }
 }
 
@@ -79,13 +79,13 @@ function checkModeratorButtonVisibility() {
     }
 }
 
-function showSupportPage() {
+function showPartnershipPage() {
     document.getElementById('start-page').classList.add('hidden');
-    document.getElementById('Support-page').classList.remove('hidden');
+    document.getElementById('Partnership-page').classList.remove('hidden');
 }
 
-function showStartPageFromSupport() {
-    document.getElementById('Support-page').classList.add('hidden');
+function showStartPageFromPartnership() {
+    document.getElementById('Partnership-page').classList.add('hidden');
     document.getElementById('start-page').classList.remove('hidden');
 }
 
