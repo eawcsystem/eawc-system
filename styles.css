@@ -1,5 +1,5 @@
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     background-color: #060606;
     margin: 0;
     padding: 0;
@@ -14,18 +14,29 @@ body {
     left: 0;
     width: 100%;  
     display: flex;
-    justify-content: space-between; 
+    justify-content: center; /* Zentriert den Inhalt des Headers */
     align-items: center; 
     z-index: 1000;
     color: white;
 }
 
 #user-info {
-    font-size: 50px;
+    font-size: 16px;
+    text-align: center; /* Zentriert den Text innerhalb des Spans */
 }
 
+#language-switcher button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
 
-
+#language-switcher button:hover {
+    background-color: #45a049;
+}
 
 .login-container {
     margin: 100px auto;
